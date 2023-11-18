@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the row horizontally within the container */
+}
+
+.panel {
+    margin: 10px;
+    width: 8%;
+}
+
+.panel img {
+    max-width: 100%;
+    border-radius: 50px;
+    height: 100%; /* Set the height to 100% of the .panel height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+}
+
+.active{
+    width: 50%;
+}
+
+.panel img:hover{
+    cursor: pointer;
+    transition: flex 0.7s ease-in;
+    
+}
+
